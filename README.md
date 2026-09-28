@@ -123,7 +123,7 @@ void P1_1_and_P1_4_Init()
 ```
 
 #### Question 14: Write a void function named Buttons_Init that configures the following pins as GPIO inputs with pull-down resistors enabled.
-
+- P3.1, P3.6, P5.0, P5.4
 ```
 void Buttons_Init()
 {
@@ -142,13 +142,14 @@ void Buttons_Init()
 ```
 
 #### Question 15: Write a void function named LEDs_Init that configures the following pins as GPIO outputs. Initialize the pins to zero
+- P7.0 to P7.7
 
 ```
 void LEDs_Init
 {
-    P7->SEL0 &= ~(0x81);
-    P7->SEL1 &= ~(0x81);
-    P7->DIR |= 0x81;
-    P7->OUT &= ~(0x81);
+    P7->SEL0 &= ~(0xFF);
+    P7->SEL1 &= ~(0xFF);
+    P7->DIR |= 0xFF;
+    P7->OUT &= ~(0xFF);
 }
 ```
