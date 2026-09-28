@@ -38,7 +38,7 @@ int AddNumbers(double number1, double number2)
 
 #### Question 5: Explain the difference between local and global variables. Provide an example of each.
 
-Locale variables is declared inside a function or block of code. It can only be used within that function or block of code. On the other hand, global variables can be used anywhere in the entire program.
+Local variables is declared inside a function or block of code. It can only be used within that function or block of code. On the other hand, global variables can be used anywhere in the entire program.
 
 ```
 int number1 = 10; // global variable
